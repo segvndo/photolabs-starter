@@ -1,5 +1,5 @@
 .photo-details-modal {
-  background-color: white;
+  background-color: #F5F5F5;
   box-shadow: 0 0 0 50vmax rgba(0,0,0,.5);
   position: absolute;
   top: 55%;
@@ -9,6 +9,7 @@
   width: 55%;
   overflow-y: scroll;
   border-radius: 12px;
+  padding: 20px;
 }
 
 .photo-details-modal__close-button {
@@ -31,7 +32,9 @@
 
 .photo-details-modal__image {
   max-width: 95%;
+  max-height: 500px;
   border-radius: 8px;
+
 }
 
 .photo-details-modal__top-bar {
@@ -55,4 +58,20 @@
   margin-top: 24px;
   margin-bottom: 24px;
   width: 90%;
+}
+
+.photo-details-modal__similarPhotos {
+  position: relative;
+}
+
+.photo-details-modal__similarPhotos__header {
+  position:fixed;
+  width: 100%;
+  padding: 10px;
+}
+
+.similarPhotos {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
 }

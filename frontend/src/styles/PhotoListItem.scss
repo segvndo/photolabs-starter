@@ -1,3 +1,11 @@
+.photoListImageWrapper {
+  position: relative;
+}
+
+// .photo-list_fav-icon-svg {
+//   color: red;
+// }
+
 .photo-list__item {
   margin: 24px;
   padding: 8px;
@@ -45,4 +53,12 @@
 
 .photo-list__user-location {
   color: #838383;
+
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }

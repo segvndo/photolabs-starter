@@ -9,8 +9,11 @@
   font-weight: 500;
   color: #2b2b2b;
 
-  &:hover {
+  
+  &:hover,
+  &:focus {
     text-decoration: overline;
     color: #111;
   }
 }
+
