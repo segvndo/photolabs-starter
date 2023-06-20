@@ -3,7 +3,7 @@ The PhotoLabs project for the Web Development React course programming.
 
 # Photolabs Demo
 
-![Landing and login page](https://github.com/segvndo/tinyapp/blob/main/docs/login.jpg)
+<!-- ![Landing and login page](https://github.com/segvndo/tinyapp/blob/main/docs/login.jpg) -->
 
 ## Setup
 
