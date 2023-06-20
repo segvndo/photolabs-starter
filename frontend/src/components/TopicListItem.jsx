@@ -6,11 +6,11 @@ const TopicListItem = (props) => {
 
   return (
     <div className="topic-list__item">
-      <a href="#topics" onClick={()=>props.topicClick(props.id)}>
+      <span href="#topics" onClick={()=>props.topicClick(props.id)}>
         <span>
           {props.title}
         </span>
-      </a>
+      </span>
     </div>
   );
 };

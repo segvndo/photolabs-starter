@@ -1,11 +1,11 @@
 .photo-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  color: #838383;
+  // color: #838383;
 }
 
 .photo-list:after {

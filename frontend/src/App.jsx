@@ -13,13 +13,11 @@ const App = () => {
 
   const [photos, setPhotos] = useState([]);
   const [topics, setTopics] = useState([]);
-
-  const url = "http://localhost:8001/api";
-
+  
   // Makes a GET request to update photos and topics.
   const fetchPhotosAndTopics = () => {
     console.log("fetching photos and topics");
-    fetch("http://localhost:8001/api/photos")
+    fetch("/api/photos")
       .then((photosResponse) => photosResponse.json())
       .then((photosData) => {
         console.log("photosData here:", photosData);
@@ -29,7 +27,7 @@ const App = () => {
         console.log("Error fetching photos:", error);
       });
 
-    fetch("http://localhost:8001/api/topics")
+    fetch("/api/topics")
       .then((topicsResponse) => topicsResponse.json())
       .then((topicsData) => {
         console.log("topicsData here:", topicsData);
@@ -45,7 +43,7 @@ const App = () => {
 
   // Backend request to fetch photos for specific topic
   const fetchPhotosAndTopic = (topicId) => {
-    fetch(`http://localhost:8001/api/topics/photos/${topicId}`)
+    fetch(`/api/topics/photos/${topicId}`)
       .then((response) => response.json())
       .then((data) => setPhotos(data))
       .catch((error) => console.log("Error fetching photos by topic:", error));

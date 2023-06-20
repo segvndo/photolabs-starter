@@ -43,7 +43,7 @@ const PhotoDetailsModal = (props) => {
             id={props.photo.id}
             favPhoto={props.favPhoto}
             username={props.photo.user.username}
-            profile={props.photo.profile} />
+            profile={props.photo.user.profile} />
         )}
       </div>
       <div className='photo-details-modal--header'>
@@ -58,20 +58,6 @@ const PhotoDetailsModal = (props) => {
             setClickedPhoto={props.setClickedPhoto}
             setClickedPhotoId={props.setClickedPhotoId}
           />}
-          {/* {arrayOfSimilarPhotos.map((photo) => (
-            <PhotoListItem
-              profile={photo.profile}
-              username={photo.username}
-              id={photo.id}
-              key={photo.id}
-              imageSource={photo.urls.regular}
-              setFavourite={props.setFavourite}
-              isFavourite={props.isFavourite}
-              toggleFav={props.toggleFav}
-              setClickedPhoto={props.setClickedPhoto}
-              setClickedPhotoId={props.setClickedPhotoId}
-              favPhoto={props.favPhoto} />
-          ))} */}
         </div>
       </div>
 
